@@ -1,0 +1,28 @@
+services:
+  - type: web
+    name: ai-jd-analyzer-api
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn backend.app:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: CORS_ORIGINS
+        sync: false
+      - key: MONGODB_URI
+        sync: false
+      - key: MONGODB_DATABASE
+        value: talentlens
+      - key: TOKEN_SECRET
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
+
+  - type: static
+    name: ai-jd-analyzer-frontend
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    rootDir: frontend
+    envVars:
+      - key: VITE_API_URL
+        sync: false

@@ -1,0 +1,45 @@
+{
+  "job_role": "Unknown",
+  "experience": "Not Mentioned",
+  "education": "B.Tech",
+  "salary": "rs,",
+  "skills": [
+    "Python",
+    "JavaScript",
+    "Java",
+    "R",
+    "TensorFlow",
+    "Pandas",
+    "NumPy",
+    "Scikit-learn",
+    "Machine Learning",
+    "Deep Learning",
+    "HTML",
+    "CSS",
+    "JavaScript"
+  ],
+  "skills_by_category": {
+    "Programming": [
+      "Python",
+      "JavaScript",
+      "Java",
+      "R"
+    ],
+    "Framework": [
+      "TensorFlow"
+    ],
+    "Data & AI": [
+      "Pandas",
+      "NumPy",
+      "Scikit-learn",
+      "Machine Learning",
+      "Deep Learning"
+    ],
+    "Web & Testing": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ]
+  },
+  "confidence": 99
+}
